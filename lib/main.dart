@@ -1,4 +1,5 @@
-import 'package:ecommerce/Screens/mainScreen.dart';
+import 'package:ecommerce/Admin/adminMain.dart';
+import 'package:ecommerce/Screens/Authentication.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: ShopkaHomePage(),
+
+      home: MainScreen(),
+
+      // home: ShopkaHomePage(),
     );
   }
 }
