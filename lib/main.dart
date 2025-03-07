@@ -1,10 +1,16 @@
 import 'package:ecommerce/Admin/adminMain.dart';
 import 'package:ecommerce/Screens/Authentication.dart';
+import 'package:ecommerce/firebase_options.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-void main() {
+void main() async {
   runApp(MyApp());
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 }
 
 class MyApp extends StatelessWidget {
